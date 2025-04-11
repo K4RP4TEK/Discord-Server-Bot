@@ -48,12 +48,12 @@ async function sendVerificationMessage(channel) {
 
     if (!existingMessage) {
         const embed = new EmbedBuilder()
-            .setDescription('# `Aby się zweryfikować, kliknij przycisk poniżej!`')
+            .setDescription('# Aby się zweryfikować, kliknij przycisk poniżej!')
             .setColor('#0066ff');
 
         const button = new ButtonBuilder()
             .setCustomId('verify_button')
-            .setLabel('Zweryfikuj się!')
+            .setLabel('✔️')
             .setStyle(ButtonStyle.Danger);
 
         const row = new ActionRowBuilder().addComponents(button);
