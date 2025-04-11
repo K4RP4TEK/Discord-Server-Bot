@@ -53,7 +53,7 @@ async function sendVerificationMessage(channel) {
 
         const button = new ButtonBuilder()
             .setCustomId('verify_button')
-            .setLabel('✔️')
+            .setLabel('✔')
             .setStyle(ButtonStyle.Danger);
 
         const row = new ActionRowBuilder().addComponents(button);
